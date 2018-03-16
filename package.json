@@ -1,21 +1,21 @@
 {
-  "name": "dashboard-pi",
+  "name": "PiMonitor",
   "version": "1.0.0",
-  "description": "A simple Dashboard Page for Pi Services",
+  "description": "A simple way of Monitor a Raspberry Pi",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juanrarodriguez18/dashboard-pi.git"
+    "url": "git+https://github.com/juanrarodriguez18/PiMonitor.git"
   },
   "author": "juanrarodriguez18",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/juanrarodriguez18/dashboard-pi/issues"
+    "url": "https://github.com/juanrarodriguez18/PiMonitor/issues"
   },
-  "homepage": "https://github.com/juanrarodriguez18/dashboard-pi#readme",
+  "homepage": "https://github.com/juanrarodriguez18/PiMonitor#readme",
   "dependencies": {
     "connect": "^3.6.5",
     "dotenv": "^4.0.0",
