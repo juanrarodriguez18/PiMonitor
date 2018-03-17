@@ -23,11 +23,15 @@
     "express-session": "^1.15.6",
     "http": "0.0.0",
     "jscs": "^3.0.7",
+    "log4js": "^2.5.3",
     "md5": "^2.2.1",
+    "mongodb": "^3.0.4",
+    "nodemailer": "^4.6.3",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "pug": "^2.0.1",
     "pug-bootstrap": "0.0.15",
-    "socket.io": "~0.9.14"
+    "socket.io": "~0.9.14",
+    "sync-request": "^6.0.0"
   }
 }
