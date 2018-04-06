@@ -21,6 +21,9 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap-theme.min.css">
 
+<!-- Custom theme -->
+<link rel="stylesheet" href="css/styles.css">
+
 <!-- Latest compiled and minified JavaScript -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
@@ -32,9 +35,11 @@
           
   <div class="row marketing">
       <div class="col-lg-4" style="top: 1.4ch">
-        <div class="panel panel-primary">
-          <div class="panel-heading">General info</div>
-          <div class="panel-body"><p  id="p_hostname">Here you can see the general info of the Raspberry Pi</p>
+        <div style="background-color: rgba(255,255,255,0.55);" class="panel">
+          <div class="panel-body">
+              <p style="text-align: center;font-family:'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;font-size:20px;">General info</p>
+              <br/>
+              <p  id="p_hostname">Here you can see the general info of the Raspberry Pi</p>
             <p  id="p_kernel"></p>
             <p  id="p_uptime"></p>
             <div>
@@ -45,9 +50,11 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-8" style="top: 1.4ch">
         <div id="chartMemory" style="min-width: 100; height:250px; margin: 0 auto"></div>
+        <br/>
         <div id="chartDisk" style="min-width: 100; height:200px; margin: 0 auto"></div>
+        <br/>
       </div>
   </div>
 
@@ -73,6 +80,8 @@
         chart: {
             renderTo: 'chart', 
             defaultSeriesType: 'spline',
+            backgroundColor: 'rgba(255,255,255,0.55)',
+            borderRadius: 15,
             events: {
                 load: function() {
                     // Cada vez que reciba un valor desde el socket, lo meto en la gráfica
@@ -114,6 +123,8 @@
         chart: {
             renderTo: 'cpu_usage', 
             defaultSeriesType: 'spline',
+            backgroundColor: 'rgba(255,255,255,0.55)',
+            borderRadius: 15,
             events: {
                 load: function() {
                     // Cada vez que reciba un valor desde el socket, lo meto en la gráfica
@@ -155,6 +166,8 @@
             chart: {
                 renderTo: 'chartMemory',
                 type: 'bar',
+                backgroundColor: 'rgba(255,255,255,0.55)',
+                borderRadius: 15,
                 events: {
                 load: function() {
                     // Cada vez que reciba un valor desde el socket, lo meto en la gráfica
@@ -205,6 +218,8 @@
             chart: {
                 renderTo: 'chartDisk',
                 type: 'pie',
+                backgroundColor: 'rgba(255,255,255,0.55)',
+                borderRadius: 15,
                 events: {
                 load: function() {
                     // Cada vez que reciba un valor desde el socket, lo meto en la gráfica
