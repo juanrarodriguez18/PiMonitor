@@ -31,13 +31,14 @@
 </head>
 <body>
     <div class="header">
-            <button type="button" id="login_button" style="border-radius: 60px;margin-top: 0.5%;margin-left: 92%;height: 36px;" class="btn btn-circle">
+            <a id="login_button" class="btn btn-circle">
                     <span class="glyphicon glyphicon-user"></span>
-            </button>
+            </a>
                   <ul class="side-categories" style="display:none;">
-                      <li><a href="">Alerts</li></a>
-                      <li><a href="">Reboot</li></a>
-                      <li><a href="">Logout</li></a>
+                      <!-- <li><a href="">Alerts</li></a> -->
+                      <li><span class="glyphicon glyphicon-off"></span><a href=""> Shutdown</li></a>
+                      <li><span class="glyphicon glyphicon-refresh"></span><a href=""> Reboot</li></a>
+                      <li><span class="glyphicon glyphicon-log-out"></span><a href="/logout"> Logout</li></a>
                   </ul>
     </div>
 <!-- Main jumbotron for a primary marketing message or call to action -->

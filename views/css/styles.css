@@ -104,13 +104,25 @@ img:hover {
   margin-bottom: 25px;
 }
 
+#login_button {
+  border-radius: 60px;
+  margin-top: 0.5%;
+  margin-left: 92%;
+  height: 33px;
+  width: 34px;
+  background-color: lightgray;
+  color: rgba(30, 30, 30, 0.7);
+  padding-left: 9.5px;
+}
+
 .side-categories {
   border-radius: 5px;
   margin-top: 0.25%;
-  margin-left: 86.5%;
+  margin-left: 87.5%;
   list-style-type: none;
   background-color:rgba(255,255,255,0.55);
-  width: 15ch;
+  width: 14ch;
+  padding-left: 15px;
 }
 
 .side-categories li a {
