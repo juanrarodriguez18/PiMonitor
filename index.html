@@ -30,6 +30,16 @@
 
 </head>
 <body>
+    <div class="header">
+            <button type="button" id="login_button" style="border-radius: 60px;margin-top: 0.5%;margin-left: 92%;height: 36px;" class="btn btn-circle">
+                    <span class="glyphicon glyphicon-user"></span>
+            </button>
+                  <ul class="side-categories" style="display:none;">
+                      <li><a href="">Alerts</li></a>
+                      <li><a href="">Reboot</li></a>
+                      <li><a href="">Logout</li></a>
+                  </ul>
+    </div>
 <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="container">
           
@@ -46,7 +56,6 @@
                 <b>Top list:</b>
                 <ol id="toplist">
                 </ol>
-                <br/>
             </div>
           </div>
         </div>
@@ -279,5 +288,13 @@
           //memTotal = total;
         });
     </script>   
+    <script>
+        $(function() {     
+            $('#login_button').on('click',function(e) {
+                e.preventDefault();
+                $(".side-categories").slideToggle();
+            });
+        });
+    </script>
 </body>
 </html>
