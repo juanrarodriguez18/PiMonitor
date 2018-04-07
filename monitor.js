@@ -15,6 +15,10 @@ module.exports = {
         child, child1;
         var connectCounter = 0;
         
+        //define socket.io log level
+
+        io.set('log level',1);
+
         //Each X seconds we send a new value to the graph 
         io.sockets.on('connection', function(socket) {
             var memTotal, memUsed = 0, memFree = 0, memBuffered = 0, memCached = 0, sendData = 1, percentBuffered, percentCached, percentUsed, percentFree;

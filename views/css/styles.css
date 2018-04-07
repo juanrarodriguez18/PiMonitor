@@ -123,6 +123,7 @@ img:hover {
   background-color:rgba(255,255,255,0.55);
   width: 14ch;
   padding-left: 15px;
+  position: absolute;
 }
 
 .side-categories li a {
